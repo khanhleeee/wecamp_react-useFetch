@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply flex justify-center py-32 bg-[#121b2e] text-[#fafafa];
+	}
+}
