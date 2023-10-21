@@ -19,14 +19,13 @@ const useFetch = (url) => {
 				setData(fetchData)
 				setLoadng(false)
 			} catch (err) {
-				console.log(err)
 				setError(err.statusText)
 				setLoadng(false)
 			}
 		}
 
 		handleFetchData()
-	}, [])
+	}, [url])
 
 	return { data, error, loading }
 }
